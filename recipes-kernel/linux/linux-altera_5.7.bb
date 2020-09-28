@@ -2,7 +2,7 @@ LINUX_VERSION = "5.7"
 
 SRCREV = "979710090977bad866637088b437229bbf54567e"
 
-include linux-altera.inc
+include linux-socfpga.inc
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 

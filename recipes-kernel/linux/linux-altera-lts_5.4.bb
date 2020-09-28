@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
 SRCREV = "7299712b69b1869ddaf1c143c9264b69351d9e2b"
 
-include linux-altera.inc
+include linux-socfpga.inc
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/config:"
 

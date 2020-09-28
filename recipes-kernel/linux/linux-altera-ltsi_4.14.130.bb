@@ -3,7 +3,7 @@ LINUX_VERSION_SUFFIX = "-ltsi"
 
 SRCREV = "cae629555019eb0d3f63d9e8e639a982e994e80f"
 
-include linux-altera.inc
+include linux-socfpga.inc
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/config:"
 
