@@ -2,10 +2,10 @@ SOC_FAMILY = "socfpga"
 
 require conf/machine/include/tune-cortexa9.inc
 
-# this variable specifies the kernel to be built: linux-altera or linux-altera-ltsi
+# this variable specifies the kernel to be built: linux-socfpga or linux-socfpga-ltsi
 # this affects the PREFERRED_PROVIDER of virtual/kernel
 # it can be overriden from the environment, using BB_ENV_EXTRAWHITE
-KERNEL_PROVIDER ?= "linux-altera"
+KERNEL_PROVIDER ?= "linux-socfpga"
 PREFERRED_PROVIDER_virtual/kernel ?= "${KERNEL_PROVIDER}"
 
 PREFERRED_PROVIDER_virtual/bootloader ?= "u-boot-socfpga"
@@ -31,5 +31,3 @@ UBOOT_SUFFIX ?= "sfp"
 UBOOT_BINARY ?= "u-boot-with-spl.${UBOOT_SUFFIX}"
 
 do_image_wic[depends] += "mtools-native:do_populate_sysroot dosfstools-native:do_populate_sysroot virtual/bootloader:do_deploy virtual/kernel:do_deploy"
-
-
