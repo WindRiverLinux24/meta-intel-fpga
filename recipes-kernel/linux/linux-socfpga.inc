@@ -1,7 +1,6 @@
 DESCRIPTION = "Linux Kernel for Intel SoCFPGA"
 LICENSE = "GPLv2"
 
-require recipes-kernel/linux/linux-yocto.inc
 
 KERNEL_REPO ?= "git://github.com/altera-opensource/linux-socfpga.git"
 KERNEL_PROT ?= "https"
@@ -22,6 +21,8 @@ PV_append = "+git${SRCPV}"
 KBRANCH ?= "${LINUX_VERSION_PREFIX}${LINUX_VERSION}${LINUX_VERSION_SUFFIX}"
 
 SRC_URI = "${KERNEL_REPO};protocol=${KERNEL_PROT};branch=${KBRANCH}"
+
+require recipes-kernel/linux/linux-yocto.inc
 
 KBUILD_DEFCONFIG ?= "socfpga_defconfig"
 KCONFIG_MODE ?= "--alldefconfig"
