@@ -2,4 +2,4 @@ require u-boot-socfpga-common.inc
 
 UBOOT_VERSION = "v2020.04"
 
-SRCREV = "cfa15875c66c8e91a0b440332b034e522daa6c45"
+SRCREV = "a08578af64180d0724a9721a154d929b785b309b"
