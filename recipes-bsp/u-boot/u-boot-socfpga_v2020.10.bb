@@ -2,6 +2,6 @@ require u-boot-socfpga-common.inc
 
 LIC_FILES_CHKSUM = "file://Licenses/README;md5=5a7450c57ffe5ae63fd732446b988025"
 
-UBOOT_VERSION = "v2020.10_RC"
+UBOOT_VERSION = "v2020.10"
 
-SRCREV = "3bbc47b3cb401ffbe9dafef3a1aebe42ddb6dc50"
+SRCREV = "a04127de993cc8a052deffd7cdad5d3c414c9e1d"
