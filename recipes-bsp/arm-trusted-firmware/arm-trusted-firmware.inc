@@ -19,7 +19,7 @@ SRC_URI = "${ATF_REPO};protocol=${ATF_PROT};branch=${ATF_BRANCH}"
 
 S = "${WORKDIR}/git"
 
-COMPATIBLE_MACHINE = "(agilex|stratix10)"
+COMPATIBLE_MACHINE = "(agilex|stratix10|n5x)"
 ATFPLAT = "${MACHINE}"
 
 # Let the Makefile handle setting up the CFLAGS and LDFLAGS as it is a standalone application
