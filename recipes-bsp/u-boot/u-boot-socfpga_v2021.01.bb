@@ -1,0 +1,7 @@
+require u-boot-socfpga-common.inc
+
+LIC_FILES_CHKSUM = "file://Licenses/README;md5=5a7450c57ffe5ae63fd732446b988025"
+
+UBOOT_VERSION = "v2021.01_RC"
+
+SRCREV = "bcc89541546a422ad0369be660a091139389120d"
