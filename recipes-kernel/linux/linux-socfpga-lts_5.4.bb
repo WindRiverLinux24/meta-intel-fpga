@@ -9,6 +9,7 @@ include linux-socfpga.inc
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/config:"
 
+SRC_URI_append_n5x = " file://jffs2.scc file://gpio_sys.scc "
 SRC_URI_append_agilex = " file://jffs2.scc file://gpio_sys.scc "
 SRC_URI_append_stratix10 = " file://jffs2.scc file://gpio_sys.scc "
 SRC_URI_append_arria10 = " file://lbdaf.scc "
