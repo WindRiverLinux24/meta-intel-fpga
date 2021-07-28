@@ -1,6 +1,9 @@
 HOMEPAGE = "http://www.denx.de/wiki/U-Boot/WebHome"
 SECTION = "bootloaders"
-DEPENDS += "flex-native bison-native dtc-native bc-native u-boot-mkimage-native"
+
+DEPENDS += "coreutils-native bc-native bison-native dtc-native flex-native"
+DEPENDS += "python3-setuptools-native swig-native u-boot-mkimage-native"
+DEPENDS += "u-boot-tools virtual/kernel"
 
 LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM ?= "file://Licenses/README;md5=30503fd321432fc713238f582193b78e"
