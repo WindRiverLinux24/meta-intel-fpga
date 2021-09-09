@@ -16,6 +16,7 @@ Dependencies
 This layer depends on:
 
   URI: git://git.yoctoproject.org/poky
+  URI: git://git.openembedded.org/meta-openembedded/meta-python
 
 
 Supported U-Boot and Linux Kernels
