@@ -19,12 +19,12 @@ UBOOT_VERSION ?= "v2020.07"
 UBOOT_BRANCH ?= "${UBOOT_VERSION_PREFIX}${UBOOT_VERSION}"
 
 SRCREV ?= "${AUTOREV}"
-PV_append = "+git${SRCPV}"
+PV:append = "+git${SRCPV}"
 
 S = "${WORKDIR}/git"
 B = "${WORKDIR}/build"
 
-RPROVIDES_${PN} += "u-boot"
+RPROVIDES:${PN} += "u-boot"
 
 SRC_URI = "${UBOOT_REPO};protocol=${UBOOT_PROT};branch=${UBOOT_BRANCH}"
 
