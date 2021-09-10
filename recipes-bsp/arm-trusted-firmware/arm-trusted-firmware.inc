@@ -30,7 +30,7 @@ AS[unexport] = "1"
 LD[unexport] = "1"
 PARALLEL_MAKE = ""
 
-ALLOW_EMPTY_${PN} = "1"
+ALLOW_EMPTY:${PN} = "1"
 
 do_configure[noexec] = "1"
 
