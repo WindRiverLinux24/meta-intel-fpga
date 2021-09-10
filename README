@@ -45,12 +45,12 @@ linux-socfpga-lts, linux-socfpga-ltsi, and linux-socfpga-ltsi-rt kernels.
 To specify a linux-socfpga kernel, add the following to your conf/local.conf
 
 	PREFERRED_PROVIDER_virtual/kernel = "linux-socfpga"
-	PREFERRED_VERSION_linux-socfpga = "5.7%"
+	PREFERRED_VERSION_linux-socfpga = "5.12%"
 
 or for the linux-socfpga-lts kernel
 
 	PREFERRED_PROVIDER_virtual/kernel = "linux-socfpga-lts"
-	PREFERRED_VERSION_linux-socfpga = "5.4%"
+	PREFERRED_VERSION_linux-socfpga-lts = "5.10%"
 
 or for the linux-socfpga-ltsi kernel
 
