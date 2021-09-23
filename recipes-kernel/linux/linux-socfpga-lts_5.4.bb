@@ -1,9 +1,9 @@
-LINUX_VERSION = "5.4.114"
+LINUX_VERSION = "5.4.124"
 LINUX_VERSION_SUFFIX = "-lts"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=bbea815ee2795b2f4230826c0c6b8814"
 
-SRCREV = "ced256e482883ac53cdda6ecdda5512be6892ae0"
+SRCREV = "d68144779f2b613cbd1eb892b6e06aeffff54009"
 
 include linux-socfpga.inc
 
