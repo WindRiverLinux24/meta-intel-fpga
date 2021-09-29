@@ -39,31 +39,18 @@ Only branches listed appropriately in https://wiki.yoctoproject.org/wiki/Stable_
 Choosing Kernel Versions
 ========================
 
-This layer has a few providers for the kernel.  These are the linux-socfpga,
-linux-socfpga-lts, linux-socfpga-ltsi, and linux-socfpga-ltsi-rt kernels.
+This layer has a few providers for the kernel.  These are the linux-socfpga
+and linux-socfpga-lts kernels.
 
 To specify a linux-socfpga kernel, add the following to your conf/local.conf
 
 	PREFERRED_PROVIDER_virtual/kernel = "linux-socfpga"
-	PREFERRED_VERSION_linux-socfpga = "5.12%"
+	PREFERRED_VERSION_linux-socfpga = "5.13%"
 
 or for the linux-socfpga-lts kernel
 
 	PREFERRED_PROVIDER_virtual/kernel = "linux-socfpga-lts"
 	PREFERRED_VERSION_linux-socfpga-lts = "5.10%"
-
-or for the linux-socfpga-ltsi kernel
-
-	PREFERRED_PROVIDER_virtual/kernel = "linux-socfpga-ltsi"
-	PREFERRED_VERSION_linux-socfpga-ltsi = "4.14%"
-
-or for the linux-socfpga-ltsi-rt kernel
-
-	PREFERRED_PROVIDER_virtual/kernel = "linux-socfpga-ltsi-rt"
-	PREFERRED_VERSION_linux-socfpga-ltsi-rt = "4.14%"
-
-Please note that older kernels will not compile with GCC 5+ and you will need
-to specify in your conf/local.conf to revert to older 4.9 toolchain.
 
 
 Specifying Devicetrees and U-Boot Configurations
