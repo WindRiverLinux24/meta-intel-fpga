@@ -11,9 +11,9 @@ PREFERRED_PROVIDER_virtual/bootloader ?= "u-boot-socfpga"
 PREFERRED_PROVIDER_u-boot ?= "u-boot-socfpga"
 
 SPL_BINARY = "spl/u-boot-spl-dtb.hex"
-UBOOT_SUFFIX = "img"
-UBOOT_BINARY = "u-boot.img"
-UBOOT_IMAGE = "u-boot-${MACHINE}-${PV}-${PR}.${UBOOT_SUFFIX}"
+UBOOT_SUFFIX = "itb"
+UBOOT_BINARY = "u-boot.itb"
+# UBOOT_IMAGE = "u-boot-${MACHINE}-${PV}-${PR}.${UBOOT_SUFFIX}"
 
 # Settings for ubifs
 MKUBIFS_ARGS = "--leb-size 126976 --min-io-size 2048 --max-leb-cnt 3600"
