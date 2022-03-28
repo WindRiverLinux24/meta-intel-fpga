@@ -1,4 +1,4 @@
-DEPENDS += "u-boot-mkenvimage-native"
+DEPENDS = "u-boot-mkenvimage-native"
 
 #Env binary size
 ENV_SIZE = "4096"

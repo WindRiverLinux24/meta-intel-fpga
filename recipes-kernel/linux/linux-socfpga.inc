@@ -1,5 +1,5 @@
 DESCRIPTION = "Linux Kernel for Intel SoCFPGA"
-LICENSE = "GPLv2"
+LICENSE = "GPL-2.0-only"
 
 
 KERNEL_REPO ?= "git://github.com/altera-opensource/linux-socfpga.git"

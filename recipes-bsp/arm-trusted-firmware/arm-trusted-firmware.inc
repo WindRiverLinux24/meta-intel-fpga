@@ -1,11 +1,11 @@
 DESCRIPTION = "ARM Trusted Firmware"
 
-LICENSE = "BSD"
+LICENSE = "BSD-3-Clause"
 LIC_FILES_CHKSUM ?= "file://docs/license.rst;md5=189505435dbcdcc8caa63c46fe93fa89"
 
-PROVIDES += "arm-trusted-firmware"
+PROVIDES = "arm-trusted-firmware"
 
-DEPENDS += "u-boot-tools"
+DEPENDS = "u-boot-tools"
 
 inherit deploy
 
