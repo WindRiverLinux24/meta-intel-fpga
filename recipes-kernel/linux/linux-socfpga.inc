@@ -14,7 +14,7 @@ LINUX_VERSION_SUFFIX ?= ""
 LINUX_VERSION ?= "4.0"
 
 SRCREV ?= "${AUTOREV}"
-SRCREV_machine ?= "${AUTOREV}"
+SRCREV_machine ?= "${SRCREV}"
 PV = "${LINUX_VERSION}${LINUX_VERSION_SUFFIX}"
 PV:append = "+git${SRCPV}"
 
