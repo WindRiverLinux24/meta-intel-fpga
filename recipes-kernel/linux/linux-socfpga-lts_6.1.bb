@@ -1,8 +1,8 @@
-LINUX_VERSION = "6.1.38"
+LINUX_VERSION = "6.1.55"
 LINUX_VERSION_SUFFIX = "-lts"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
 
-SRCREV = "21b5300ed5bd7bf2a8fe8ed2d4a1b1bb482f9303"
+SRCREV = "5d088588acedd5c428e7515fed168344cdeaaed2"
 
 include linux-socfpga.inc
