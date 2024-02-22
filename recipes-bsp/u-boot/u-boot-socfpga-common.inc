@@ -12,6 +12,9 @@ DEPENDS:append:agilex7_dk_si_agi027fa = " arm-trusted-firmware bash"
 DEPENDS:append:agilex7_dk_dev_agf027f1es = " arm-trusted-firmware bash"
 DEPENDS:append:agilex7_dk_dev_agm039fes = " arm-trusted-firmware bash"
 DEPENDS:append:agilex5 = " arm-trusted-firmware bash"
+DEPENDS:append:agilex5_devkit = " arm-trusted-firmware bash"
+DEPENDS:append:agilex5_mudv_cvr = " arm-trusted-firmware bash"
+DEPENDS:append:agilex5_mucv = " arm-trusted-firmware bash"
 DEPENDS:append:stratix10 = " arm-trusted-firmware bash"
 DEPENDS:append:n5x = " arm-trusted-firmware bash"
 
@@ -22,6 +25,9 @@ COMPILE_PREPEND_FILES:agilex7_dk_si_agi027fa = " bl31.bin "
 COMPILE_PREPEND_FILES:agilex7_dk_dev_agf027f1es = " bl31.bin "
 COMPILE_PREPEND_FILES:agilex7_dk_dev_agm039fes = " bl31.bin "
 COMPILE_PREPEND_FILES:agilex5 = " bl31.bin "
+COMPILE_PREPEND_FILES:agilex5_devkit = " bl31.bin "
+COMPILE_PREPEND_FILES:agilex5_mudv_cvr = " bl31.bin "
+COMPILE_PREPEND_FILES:agilex5_mucv = " bl31.bin "
 COMPILE_PREPEND_FILES:stratix10 = " bl31.bin "
 COMPILE_PREPEND_FILES:n5x = " bl31.bin Image linux.dtb u-boot.txt "
 COMPILE_PREPEND_FILES:arria10 = " Image "
@@ -33,6 +39,9 @@ DEPLOY_APPEND_FILES:agilex7_dk_si_agi027fa = ""
 DEPLOY_APPEND_FILES:agilex7_dk_dev_agf027f1es = ""
 DEPLOY_APPEND_FILES:agilex7_dk_dev_agm039fes = ""
 DEPLOY_APPEND_FILES:agilex5 = ""
+DEPLOY_APPEND_FILES:agilex5_devkit = ""
+DEPLOY_APPEND_FILES:agilex5_mudv_cvr = ""
+DEPLOY_APPEND_FILES:agilex5_mucv = ""
 DEPLOY_APPEND_FILES:stratix10 = ""
 DEPLOY_APPEND_FILES:n5x = " kernel.itb "
 
@@ -100,7 +109,7 @@ do_compile:prepend() {
 }
 
 do_install:append() {
-	if [ "${MACHINE}" = *"agilex7_"* ] || [ "${MACHINE}" = "agilex5" ] || [ "${MACHINE}" = "stratix10" ] || [ "${MACHINE}" = "n5x" ]; then
+	if [ "${MACHINE}" = *"agilex7_"* ] || [ "${MACHINE}" = *"agilex5"* ] || [ "${MACHINE}" = "stratix10" ] || [ "${MACHINE}" = "n5x" ]; then
 		if [ -n "${UBOOT_CONFIG}" ]; then
 			for config in ${UBOOT_MACHINE}; do
 				i=$(expr $i + 1);
